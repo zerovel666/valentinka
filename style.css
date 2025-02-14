@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+body{
+    height: auto;
+    font-family: "Great Vibes", serif;
+    font-style: normal;
+}
+#gifCont {
+    font-family: "Great Vibes", serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    font-size: 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+#gifCats{
+    width: 400px;
+    height: 400px;
+}
+
+#question{
+    position: absolute;
+    top: 30%;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 10px;
+    width: 300px;
+    font-size: 70px;
+    height: 105px;
+    border-radius: 25px;
+    background-color: rgb(255, 25, 25);
+    color: white;
+}
+#question p{
+    font-size: 80px;
+    text-align: center;
+}

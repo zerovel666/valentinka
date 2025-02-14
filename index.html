@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gifCont">
+        <h1>С днем святого Валентина, любимая Дашенька ❤️</h1>
+        <img src="cats.gif" id="gifCats" alt="Милые котики">
+    </div>
+
+    <div id="question">
+        <p>Будешь моей женой в будущем?)))</p>
+        <div id="buttons">
+            <button id="yes" onclick="alert('Урааа! ❤️')">Да</button>
+            <button id="no">Нет</button>
+        </div>
+    </div>
+    
+    <script>
+        const noButton = document.getElementById('no');
+        noButton.style.position = 'relative';
+        let moveCount = 0;
+    
+        noButton.addEventListener('mouseenter', () => {
+            if (moveCount < 5) {
+                const randomX = Math.random() * 300 - 100;
+                const randomY = Math.random() * 300 - 100;
+                noButton.style.left = `${randomX}px`;
+                noButton.style.top = `${randomY}px`;
+                moveCount++;
+            } else {
+                noButton.style.display = 'none';
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
